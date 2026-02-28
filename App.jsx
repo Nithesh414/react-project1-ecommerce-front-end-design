@@ -4,7 +4,7 @@ import Products from "./Products";
 import Navbar from "./Navbar";
 function App() {
   const [data, setData] = useState([]);
-  const [originalData, setOriginalData] = useState([]); // store original API data
+  const [originalData, setOriginalData] = useState([]);
   const [loading, setLoading] = useState(true);
 const [dataa, setDataa] = useState([]);
   useEffect(() => {
