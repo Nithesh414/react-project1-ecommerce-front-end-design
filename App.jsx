@@ -7,19 +7,7 @@ function App() {
   const [originalData, setOriginalData] = useState([]);
   const [loading, setLoading] = useState(true);
 const [dataa, setDataa] = useState([]);
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((apiData) => {
-        setData(apiData);
-        setOriginalData(apiData);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Fetch Error:", err);
-        setLoading(false);
-      });
-  }, []);
+
 
 if (loading) return <p>Loading...</p>;
 
